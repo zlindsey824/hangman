@@ -4,12 +4,19 @@
 class HangMan
 {
 	public:
+		HangMan();
+		HangMan(int);
+		void displayGallow();
 		void displayHangman();
 		void displayGuesses();
 		void displayWord();	
+		void incrementWrongGuess();
+//		void setWordSize(char*);
 	private:
 		int maxWrong;
-		char *inputWord;
+		int wrongGuess;
+		int wordLength;
+//		char *inputWord;
 };
 
 		
